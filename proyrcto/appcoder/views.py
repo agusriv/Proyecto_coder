@@ -8,13 +8,13 @@ def inicio(request):
     return render(request, "appcoder/index.html")
 
 def cursos(request):
-    return HttpResponse("Estas en Cursos")
+    return render(request, "appcoder/cursos.html")
 
 def estudiantes(request):
-    return HttpResponse("Estas en Estudiantes")
+    return render(request, "appcoder/estudiantes.html")
 
 def profesores(request):
-    return HttpResponse("Estas en Profesores")
+    return render(request, "appcoder/profesores.html")
 
 def entregables(request):
-    return HttpResponse("Estas en Entrehables")
+    return render(request, "appcoder/entregables.html")
