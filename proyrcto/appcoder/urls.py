@@ -9,4 +9,7 @@ urlpatterns =[
     path("cursos/crear/", creacion_curso, name="coder-cursos-crear"),
     path("entregables/", entregables, name= "coder-entregables"),
     path("inicio/", inicio, name= "coder-inicio"),
+    path("cursos/buscar/", buscar_curso, name= "coder-cursos-buscar"),
+    path("cursos/buscar/resultados/", resultado_busqueda_curso, name= "coder-cursos-buscar-resultados")
+
 ]

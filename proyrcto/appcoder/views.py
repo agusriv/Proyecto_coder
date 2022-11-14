@@ -46,3 +46,12 @@ def creacion_curso(request):
         curso.save()
 
     return render(request, "appcoder/curso_formulario.html")
+
+def buscar_curso(request):
+    return render(request, "appcoder/busqueda_cursos.html")
+
+def resultado_busqueda_curso(request):
+    nombre_curso = request.GET["nombre_curso"]
+
+    cursos = Curso.objects.filter(nombre__icontains=nombre_curso)
+    return render(request, "appcoder/resultado_busquedas_curso.html", {"cursos": cursos})
